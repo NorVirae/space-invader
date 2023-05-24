@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6837066136762232960}
   - component: {fileID: 7449030091763222347}
   - component: {fileID: 3273054845186669467}
+  - component: {fileID: -2486446002461195840}
+  - component: {fileID: -2948089988613440086}
   m_Layer: 0
   m_Name: BulletMonster1
   m_TagString: Untagged
@@ -133,3 +135,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-2486446002461195840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6837066136762232961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f12658057ee7d524fbf317761eef2f65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 0, y: -10}
+--- !u!114 &-2948089988613440086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6837066136762232961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab9663ce34009144b9bcd6bffa54b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

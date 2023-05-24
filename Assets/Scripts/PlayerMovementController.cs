@@ -19,7 +19,6 @@ public class PlayerMovementController : MonoBehaviour
     {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
-        Debug.Log("V : " + v + " h: " + h);
 
         Vector2 dir = new Vector2(h, v);
         rigidBody.velocity = dir.normalized * speed;
