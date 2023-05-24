@@ -17,6 +17,7 @@ public class PlayerBulletConroller : MonoBehaviour
 
     private void ShootBullet()
     {
-        GameObject b = Instantiate(bullet, transform.position, Quaternion.identity);
+        Vector2 newBulPos = new Vector2(transform.position.x, transform.position.y);
+        GameObject b = Instantiate(bullet, newBulPos, Quaternion.identity);
     }
 }

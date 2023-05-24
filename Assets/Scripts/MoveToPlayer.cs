@@ -10,10 +10,14 @@ public class MoveToPlayer : MonoBehaviour
     {
         
         GameObject gameObject = GameObject.FindWithTag("Player");
-        Vector3 playerPos = (gameObject.transform.position - transform.position).normalized;
+        if (gameObject != null)
+        {
+            Vector2 bulletNewPos = (gameObject.transform.position - transform.position).normalized;
+            GetComponent<Rigidbody2D>().velocity = bulletNewPos * speed;
+        }
+       
         //Debug.Log("x: " + playerPos.x + " y: " + playerPos.y);
-        Vector2 bulletNewPos = new Vector2( playerPos.x, playerPos.y);
-        GetComponent<Rigidbody2D>().velocity = bulletNewPos * speed;
+        
     }
 
 
